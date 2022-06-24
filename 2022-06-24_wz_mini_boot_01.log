@@ -1,0 +1,381 @@
+
+U-Boot SPL 2013.07 (Dec 21 2020 - 18:19:28)
+Timer init
+
+CLK stop
+
+PLL init
+
+pll_init:366
+
+pll_cfg.pdiv = 10, pll_cfg.h2div = 5, pll_cfg.h0div = 5, pll_cfg.cdiv = 1, pll_cfg.l2div = 2
+
+nf=116 nr = 1 od0 = 1 od1 = 2
+
+cppcr is 07405100
+
+CPM_CPAPCR 0740510d
+
+nf=100 nr = 1 od0 = 1 od1 = 2
+
+cppcr is 06405100
+
+CPM_CPMPCR 0640510d
+
+nf=100 nr = 1 od0 = 1 od1 = 2
+
+cppcr is 06405100
+
+CPM_CPVPCR 0640510d
+
+cppcr 0x9a7b5510
+
+apll_freq 1392000000 
+
+mpll_freq 1200000000 
+
+vpll_freq = 1200000000
+
+ddr sel mpll, cpu sel apll
+
+ddrfreq 600000000
+
+cclk  1392000000
+
+l2clk 696000000
+
+h0clk 240000000
+
+h2clk 240000000
+
+pclk  120000000
+
+CLK init
+
+SDRAM init
+
+sdram init start
+
+ddr_inno_phy_init ..!
+
+phy reg = 0x00000007, CL = 0x00000007
+
+ddr_inno_phy_init ..! 11:  00000004
+
+ddr_inno_phy_init ..! 22:  00000006
+
+ddr_inno_phy_init ..! 33:  00000006
+
+REG_DDR_LMR: 00000210
+
+REG_DDR_LMR: 00000310
+
+REG_DDR_LMR: 00000110
+
+REG_DDR_LMR, MR0: 00f73011
+
+T31_0x5: 00000007
+
+T31_0x15: 0000000c
+
+T31_0x4: 00000000
+
+T31_0x14: 00000002
+
+INNO_TRAINING_CTRL 1: 00000000
+
+INNO_TRAINING_CTRL 2: 000000a1
+
+T31_cc: 00000003
+
+INNO_TRAINING_CTRL 3: 000000a0
+
+T31_118: 0000003c
+
+T31_158: 0000003c
+
+T31_190: 0000001f
+
+T31_194: 0000001d
+
+jz-04 :  0x00000051 
+
+jz-08 :  0x000000a0 
+
+jz-28 :  0x00000024 
+
+DDR PHY init OK
+
+INNO_DQ_WIDTH   :00000003
+
+INNO_PLL_FBDIV  :00000014
+
+INNO_PLL_PDIV   :00000005
+
+INNO_MEM_CFG    :00000051
+
+INNO_PLL_CTRL   :00000018
+
+INNO_CHANNEL_EN :0000000d
+
+INNO_CWL        :00000006
+
+INNO_CL         :00000007
+
+DDR Controller init
+
+DDRC_STATUS         0x80000001
+
+DDRC_CFG            0x0aa88a42
+
+DDRC_CTRL           0x0000011c
+
+DDRC_LMR            0x00400008
+
+DDRC_DLP            0x00000000
+
+DDRC_TIMING1        0x050f0a06
+
+DDRC_TIMING2        0x021c0a07
+
+DDRC_TIMING3        0x200a0722
+
+DDRC_TIMING4        0x26240031
+
+DDRC_TIMING5        0xff060405
+
+DDRC_TIMING6        0x321c0505
+
+DDRC_REFCNT         0x00910503
+
+DDRC_MMAP0          0x000020f8
+
+DDRC_MMAP1          0x00002800
+
+DDRC_REMAP1         0x030e0d0c
+
+DDRC_REMAP2         0x07060504
+
+DDRC_REMAP3         0x0b0a0908
+
+DDRC_REMAP4         0x0f020100
+
+DDRC_REMAP5         0x13121110
+
+DDRC_AUTOSR_EN      0x00000000
+
+sdram init finished
+
+SDRAM init ok
+
+board_init_r
+
+image entry point: 0x80100000
+
+
+
+U-Boot 2013.07 (Dec 21 2020 - 18:19:28)
+
+Board: ISVP (Ingenic XBurst T31 SoC)
+DRAM:  128 MiB
+Top of RAM usable for U-Boot at: 84000000
+Reserving 436k for U-Boot at: 83f90000
+Reserving 32772k for malloc() at: 81f8f000
+Reserving 32 Bytes for Board Info at: 81f8efe0
+Reserving 124 Bytes for Global Data at: 81f8ef64
+Reserving 128k for boot params() at: 81f6ef64
+Stack Pointer at: 81f6ef48
+Now running in RAM - U-Boot at: 83f90000
+MMC:   msc: 0
+the manufacturer 1c
+SF: Detected EN25QH128A
+
+*** Warning - bad CRC, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+misc_init_r before change the wifi_enable_gpio
+gpio_request lable = wifi_enable_gpio gpio = 57
+misc_init_r after gpio_request the wifi_enable_gpio ret is 57
+misc_init_r after change the wifi_enable_gpio ret is 0
+misc_init_r before change the yellow_gpio
+gpio_request lable = yellow_gpio gpio = 38
+misc_init_r after gpio_request the yellow_gpio ret is 38
+misc_init_r after change the yellow_gpio ret is 0
+misc_init_r before change the blue_gpio
+gpio_request lable = blue_gpio gpio = 39
+misc_init_r after gpio_request the blue_gpio ret is 39
+misc_init_r after change the blue_gpio ret is 1
+gpio_request lable = night_gpio gpio = 49
+misc_init_r after gpio_request the night_gpio ret is 49
+misc_init_r after change the night_gpio ret is 0
+gpio_request lable = 850_light_gpio gpio = 47
+misc_init_r after gpio_request the 850_light_gpio ret is 47
+misc_init_r after change the 850_light_gpio ret is 0
+gpio_request lable = SPK_able_gpio gpio = 63
+misc_init_r after gpio_request the SPK_able_gpio ret is 63
+misc_init_r after change the SPK_able_gpio ret is 0
+gpio_request lable = TF_en_gpio gpio = 50
+misc_init_r after gpio_request the TF_en_gpio ret is 50
+misc_init_r after change the TF_en_gpio ret is 0
+gpio_request lable = TF_cd_gpio gpio = 59
+misc_init_r after gpio_request the TF_cd_gpio ret is 59
+misc_init_r after change the TF_cd_gpio ret is 0
+gpio_request lable = SD_able_gpio gpio = 48
+misc_init_r after gpio_request the SD_able_gpio ret is 48
+misc_init_r after change the SD_able_gpio ret is 0
+misc_init_r before change the wifi_enable_gpio
+gpio_request lable = wifi_enable_gpio gpio = 57
+misc_init_r after gpio_request the wifi_enable_gpio ret is 57
+misc_init_r after change the wifi_enable_gpio ret is 1
+Hit any key to stop autoboot:  0 
+Interface:  MMC
+  Device 0: Vendor: Man 000027 Snr d89f0701 Rev: 13.10 Prod: SD16G0
+            Type: Removable Hard Disk
+            Capacity: 14804.0 MB = 14.4 GB (30318592 x 512)
+Filesystem: FAT32 "NO NAME    "
+file_fat_detectfs OK
+reading factory_t31_ZMC6tiIDQN
+reading factory_t31_ZMC6tiIDQN
+## Booting kernel from Legacy Image at 84000000 ...
+   Image Name:   Linux-3.10.14__isvp_swan_1.0__
+   Image Type:   MIPS Linux Kernel Image (lzma compressed)
+   Data Size:    2096734 Bytes = 2 MiB
+   Load Address: 80010000
+   Entry Point:  803d3c50
+   Verifying Checksum ... OK
+   Uncompressing Kernel Image ... OK
+
+Starting kernel ...
+
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 3.10.14__isvp_swan_1.0__ (root@67ab471058d8) (gcc version 4.7.4 (Buildroot 2016.02) ) #5 PREEMPT Fri Jun 24 08:19:03 UTC 2022
+[    0.000000] bootconsole [early0] enabled
+[    0.000000] CPU0 RESET ERROR PC:E5038904
+[    0.000000] CPU0 revision is: 00d00100 (Ingenic Xburst)
+[    0.000000] FPU revision is: 00b70000
+[    0.000000] CCLK:1392MHz L2CLK:696Mhz H0CLK:200MHz H2CLK:200Mhz PCLK:100Mhz
+[    0.000000] Determined physical RAM map:
+[    0.000000]  memory: 004f7000 @ 00010000 (usable)
+[    0.000000]  memory: 00079000 @ 00507000 (usable after init)
+[    0.000000] User-defined physical RAM map:
+[    0.000000]  memory: 05000000 @ 00000000 (usable)
+[    0.000000] Initrd not found or empty - disabling initrd
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x00000000-0x04ffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x00000000-0x04ffffff]
+[    0.000000] Primary instruction cache 32kB, 8-way, VIPT, linesize 32 bytes.
+[    0.000000] Primary data cache 32kB, 8-way, VIPT, no aliases, linesize 32 bytes
+[    0.000000] pls check processor_id[0x00d00100],sc_jz not support!
+[    0.000000] MIPS secondary cache 128kB, 8-way, linesize 32 bytes.
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping off.  Total pages: 20320
+[    0.000000] Kernel command line: console=ttyS1,115200n8 mem=80M@0x0 rmem=48M@0x5000000 rdinit=/init mtdparts=jz_sfc:256K(boot),1984K(kernel),3904K(rootfs),3904K(app),1984K(kback),3904K(aback),384K(cfg),64K(para)
+[    0.000000] PID hash table entries: 512 (order: -1, 2048 bytes)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Memory: 73712k/81920k available (3891k kernel code, 8208k reserved, 1189k data, 484k init, 0k highmem)
+[    0.000000] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] NR_IRQS:358
+[    0.000000] clockevents_config_and_register success.
+[    0.000014] Calibrating delay loop... 1391.00 BogoMIPS (lpj=6955008)
+[    0.087831] pid_max: default: 32768 minimum: 301
+[    0.092688] Mount-cache hash table entries: 512
+[    0.097604] Initializing cgroup subsys debug
+[    0.101860] Initializing cgroup subsys freezer
+[    0.107294] devtmpfs: initialized
+[    0.111436] regulator-dummy: no parameters
+[    0.115680] NET: Registered protocol family 16
+[    0.129554] bio: create slab <bio-0> at 0
+[    0.135003] jz-dma jz-dma: JZ SoC DMA initialized
+[    0.139986] usbcore: registered new interface driver usbfs
+[    0.145516] usbcore: registered new interface driver hub
+[    0.150959] usbcore: registered new device driver usb
+[    0.156144]  (null): set:249  hold:250 dev=100000000 h=500 l=500
+[    0.162234] media: Linux media interface: v0.10
+[    0.166796] Linux video capture interface: v2.00
+[    0.171596] Advanced Linux Sound Architecture Driver Initialized.
+[    0.178913] Switching to clocksource jz_clocksource
+[    0.183977] cfg80211: Calling CRDA to update world regulatory domain
+[    0.190928] jz-dwc2 jz-dwc2: cgu clk gate get error
+[    0.195834] DWC IN OTG MODE
+[    0.199242] dwc2 dwc2: Keep PHY ON
+[    0.202605] dwc2 dwc2: Using Buffer DMA mode
+[    0.206952] dwc2 dwc2: Core Release: 3.00a
+[    0.211114] dwc2 dwc2: DesignWare USB2.0 High-Speed Host Controller
+[    0.217461] dwc2 dwc2: new USB bus registered, assigned bus number 1
+[    0.224602] hub 1-0:1.0: USB hub found
+[    0.228334] hub 1-0:1.0: 1 port detected
+[    0.232386] dwc2 dwc2: DWC2 Host Initialized
+[    0.236872] dwc2 dwc2: enter dwc2_gadget_plug_change:2589: plugin = 1 pullup_on = 0 suspend = 0
+[    0.245807] NET: Registered protocol family 2
+[    0.250533] TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.257603] TCP bind hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.263996] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.270456] TCP: reno registered
+[    0.273684] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    0.279629] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    0.286160] NET: Registered protocol family 1
+[    0.311111] dwc2 dwc2: ID PIN CHANGED!
+[    0.488301] freq_udelay_jiffys[0].max_num = 10
+[    0.492726] cpufreq 	udelay 	loops_per_jiffy	
+[    0.497214] 12000	 59956	 59956	
+[    0.500408] 24000	 119913	 119913	
+[    0.503872] 60000	 299784	 299784	
+[    0.507295] 120000	 599569	 599569	
+[    0.510826] 200000	 999282	 999282	
+[    0.514438] 300000	 1498924	 1498924	
+[    0.518066] 600000	 2997848	 2997848	
+[    0.521774] 792000	 3957159	 3957159	
+[    0.525494] 1008000	 5036385	 5036385	
+[    0.529279] 1200000	 5995696	 5995696	
+[    0.537190] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.543146] jffs2: version 2.2. © 2001-2006 Red Hat, Inc.
+[    0.548952] msgmni has been set to 143
+[    0.553601] io scheduler noop registered
+[    0.557606] io scheduler cfq registered (default)
+[    0.564128] jz-uart.1: ttyS1 at MMIO 0x10031000 (irq = 58) is a uart1
+[    0.571656] console [ttyS1] enabled, bootconsole disabled
+[    0.571656] console [ttyS1] enabled, bootconsole disabled
+[    0.585992] brd: module loaded
+[    0.590778] loop: module loaded
+[    0.594600] zram: Created 2 device(s) ...
+[    0.598830] logger: created 256K log 'log_main'
+[    0.604028] jz TCU driver register completed
+[    0.608722] the id code = 1c7018, the flash name is EN25QH128A
+[    0.614786] JZ SFC Controller for SFC channel 0 driver register
+[    0.620904] 8 cmdlinepart partitions found on MTD device jz_sfc
+[    0.627017] Creating 8 MTD partitions on "jz_sfc":
+[    0.631956] 0x000000000000-0x000000040000 : "boot"
+[    0.637394] 0x000000040000-0x000000230000 : "kernel"
+[    0.642938] 0x000000230000-0x000000600000 : "rootfs"
+[    0.648568] 0x000000600000-0x0000009d0000 : "app"
+[    0.653882] 0x0000009d0000-0x000000bc0000 : "kback"
+[    0.659370] 0x000000bc0000-0x000000f90000 : "aback"
+[    0.664912] 0x000000f90000-0x000000ff0000 : "cfg"
+[    0.670194] 0x000000ff0000-0x000001000000 : "para"
+[    0.675624] SPI NOR MTD LOAD OK
+[    0.678904] tun: Universal TUN/TAP device driver, 1.6
+[    0.684144] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    0.690897] wait stable.[289][cgu_msc0]
+[    0.694903] jzmmc_v1.2 jzmmc_v1.2.0: vmmc regulator missing
+[    0.700885] jzmmc_v1.2 jzmmc_v1.2.0: register success!
+[    0.706234] jzmmc_v1.2 jzmmc_v1.2.0: card inserted, state=0
+[    0.712101] jzmmc_v1.2 jzmmc_v1.2.1: vmmc regulator missing
+[    0.718065] jzmmc_v1.2 jzmmc_v1.2.1: register success!
+[    0.725545] TCP: cubic registered
+[    0.728971] NET: Registered protocol family 17
+[    0.734318] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    0.741438] drivers/rtc/hctosys.c: unable to open rtc device (rtc0)
+[    0.748035] ALSA device list:
+[    0.751094]   #0: Loopback 1
+^@[    0.755996] Freeing unused kernel memory: 484K (80507000 - 80580000)
+[    0.762592] Failed to execute /init
+
+Please press Enter to activate this console. [    0.963813] mmc0: new high speed SDHC card at address 5048
+[    0.969696] mmcblk0: mmc0:5048 SD16G 14.4 GiB 
+[    0.975660]  mmcblk0: p1
